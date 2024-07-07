@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaMinusCircle, FaPlusCircle } from 'react-icons/fa'
 
 const Faq = ({question = "", answer = ""}) => {
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(true)
   return (
     <div className="hover:shadow-md p-3 rounded-md">
           <div className="flex text-purple-950 justify-between">
