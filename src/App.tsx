@@ -8,12 +8,12 @@ function App() {
       <div className="w-[450px] shadow-md shadow-black rounded h-full items-center m-auto p-3 px-6">
         <h1 className="text-2xl font-bold flex items-center my-5">
           {" "}
-          <FaStar className="text-purple-500" />{" "}
+          <FaStar className="text-purple-500 pl-2" size={40} />{" "}
           <span className="pl-5">FAQs</span>
         </h1>
         <Faq
-          key="faq-1"
-          question={"What is frontend mentor, and how it will help you"}
+          // key="faq-1"
+          question={"What is frontend mentor, and how it will help you?"}
           answer={
             "Frontend Mentor offers realisitic coding challenges to help " +
             " developers improve their frontend coding skills with projects in" +
@@ -24,7 +24,7 @@ function App() {
 
         <Faq
           key="faq-2"
-          question={"Is Frontend Mentor free ?"}
+          question={"Is Frontend Mentor free?"}
           answer={
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit." +
             "Molestiae nostrum doloribus fuga beatae assumenda adipisci" +
@@ -34,7 +34,7 @@ function App() {
 
         <Faq
           key="faq-3"
-          question={"Can i use Frontend Mentor projects in my portfolio ?"}
+          question={"Can i use Frontend Mentor projects in my portfolio?"}
           answer={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
             "Blanditiis iure distinctio incidunt eveniet minima harum."
