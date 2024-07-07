@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { FaMinusCircle, FaPlusCircle, FaStar } from "react-icons/fa";
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [show, setShow] = useState(false)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="w-[450px] shadow-md shadow-black rounded h-full items-center m-auto p-3 px-6">
+        <h1 className="text-2xl font-bold flex items-center my-5">
+          {" "}
+          <FaStar className="text-purple-500" />{" "}
+          <span className="pl-5">FAQs</span>
+        </h1>
+        <div>
+          <div className="flex text-purple-950 justify-between">
+            <h2 className="text-md font-bold flex-wrap">
+              what is frontend mentor, and how it will help you
+            </h2>
+            <button>
+              <FaPlusCircle onClick={() => setShow(true)} />
+              <FaMinusCircle onClick={() => setShow(false)} />
+            </button>
+          </div>
+          {show && <p className="my-3 opacity-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a
+            dolorum odit blanditiis hic. Mollitia itaque consectetur voluptas
+            totam unde iste in cum ratione fugiat dolores repellendus obcaecati
+            aliquid dolore porro placeat, perferendis consequuntur commodi
+          </p>}
+          
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
