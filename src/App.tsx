@@ -18,12 +18,19 @@ function App() {
               What is frontend mentor, and how it will help you
             </h2>
             <button>
-              <FaPlusCircle onClick={() => setShow(!show)} />
+              {show ? (
+                <FaPlusCircle onClick={() => setShow(!show)} />
+              ) : (
+                <FaMinusCircle onClick={() => setShow(!show)} />
+              )}
             </button>
           </div>
           {!show && (
             <p className="my-3 opacity-60">
-              Frontend Mentor offers realisitic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and javascript. it's suitable for all levels and ideal for portfolio building 
+              Frontend Mentor offers realisitic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS and javascript. it's suitable for all levels and ideal
+              for portfolio building
             </p>
           )}
         </div>
@@ -33,12 +40,18 @@ function App() {
               Is Frontend Mentor free ?
             </h2>
             <button>
-              <FaPlusCircle onClick={() => setShow(!show)} />
+              {show ? (
+                <FaPlusCircle onClick={() => setShow(!show)} />
+              ) : (
+                <FaMinusCircle onClick={() => setShow(!show)} />
+              )}
             </button>
           </div>
           {!show && (
             <p className="my-3 opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum doloribus fuga beatae assumenda adipisci accusantium laborum odit animi consequatur.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae nostrum doloribus fuga beatae assumenda adipisci
+              accusantium laborum odit animi consequatur.
             </p>
           )}
         </div>
@@ -48,12 +61,17 @@ function App() {
               Can i use Frontend Mentor projects in my portfolio ?
             </h2>
             <button>
-              <FaPlusCircle onClick={() => setShow(!show)} />
+              {show ? (
+                <FaPlusCircle onClick={() => setShow(!show)} />
+              ) : (
+                <FaMinusCircle onClick={() => setShow(!show)} />
+              )}
             </button>
           </div>
           {!show && (
             <p className="my-3 opacity-60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iure distinctio incidunt eveniet minima harum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis iure distinctio incidunt eveniet minima harum.
             </p>
           )}
         </div>
@@ -63,12 +81,19 @@ function App() {
               How can i get help if i'm stuck on a challenges
             </h2>
             <button>
-              <FaPlusCircle onClick={() => setShow(!show)} />
+              {show ? (
+                <FaPlusCircle onClick={() => setShow(!show)} />
+              ) : (
+                <FaMinusCircle onClick={() => setShow(!show)} />
+              )}
             </button>
           </div>
           {!show && (
             <p className="my-3 opacity-60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab architecto vero nesciunt blanditiis, molestias officia suscipit delectus nostrum facilis assumenda aperiam sint. Facere, molestias.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab
+              architecto vero nesciunt blanditiis, molestias officia suscipit
+              delectus nostrum facilis assumenda aperiam sint. Facere,
+              molestias.
             </p>
           )}
         </div>
