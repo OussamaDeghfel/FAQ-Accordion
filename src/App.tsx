@@ -14,7 +14,7 @@ function App() {
           </h1>
           <Faq
             // key="faq-1"
-            question={"What is frontend mentor, and how it will help you?"}
+            question={"What is frontend mentor, and how it will help me?"}
             answer={
               "Frontend Mentor offers realisitic coding challenges to help " +
               " developers improve their frontend coding skills with projects in" +

@@ -11,7 +11,7 @@ const Faq = ({question = "", answer = ""}) => {
             </h2>
             <button>
               {show ? (
-                <FaPlusCircle onClick={() => setShow(!show)} />
+                <FaPlusCircle className='text-purple-500' onClick={() => setShow(!show)} />
               ) : (
                 <FaMinusCircle onClick={() => setShow(!show)} />
               )}
